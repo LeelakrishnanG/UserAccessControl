@@ -37,6 +37,7 @@ public class SecurityConfig {
 
     @Autowired
     private JWTFilter jwtFilter;
+    
     @Bean
     public SecurityFilterChain  securityfilterchain(HttpSecurity http)throws Exception{
             http.csrf(customizer->customizer.disable())
